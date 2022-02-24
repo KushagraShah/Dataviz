@@ -1,0 +1,23 @@
+<section class="bg-primary" id="constellation">
+  <div id="viz">
+    <div id="search_bar">
+      <input id="search" type="text" placeholder="e.g. Clint"><i class="fa fa-search"></i>
+    </div>
+    <div id="constellation_svg">
+      <div id="side_window">
+        <div class="modal-header">
+          <button type="button" class="close" onclick="close_side_window()" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h5 class="modal-title" id="side-title">Right Sidebar</h5>
+        </div>
+        <div id="side_chart"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="actor_dot"></span> Actor&nbsp;&nbsp;
+    <span class="director_dot"></span> Director
+  </div>
+</section>

@@ -1,0 +1,103 @@
+.links line {
+  stroke-opacity: 0.6;
+}
+
+.actor_dot {
+  height: 20px;
+  width: 20px;
+  background-color:#FFB326;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.director_dot {
+  height: 20px;
+  width: 20px;
+  background-color: #7959ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+#constellation {
+  background-image: url("../img/black_sky.jpg");
+}
+
+#constellation .legend {
+  width: 300px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+#constellation .legend span {
+  padding: 10px;
+}
+
+#constellation_svg {
+  position: relative;
+
+  /* Border to ensure that we see where the SVG starts */
+  border: 2px solid #344F87;
+
+  /* Place the SVG in the center of the screen */
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 600px;
+}
+
+/* Style the search box */
+#search_bar {
+  border: none;
+  /* Calc is used to be pixel-perfect with the borders (they involve a 2px displacement) */
+  margin-left: calc(5% - 2px);
+  font-size: 17px;
+}
+
+#search_bar input {
+  color: black;
+  font-size: small;
+
+}
+
+#viz {
+    position: relative; /* Stay in place */
+}
+
+/* The side navigation menu */
+#side_window {
+    border-radius: 0px 0px 25px 25px;
+    height: 0; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #FFF;
+    overflow-y: hidden; /* Disable vertical scroll */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the side_window */
+}
+  
+.modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+    color: black;
+}
+
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  padding: 5px;				
+  font: 12px sans-serif;		
+  background: white;	
+  border: 1px;
+  border-style: solid;
+  border-color: black;	
+  border-radius: 0px 0px 8px 0px;
+  pointer-events: none;			
+}
